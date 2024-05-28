@@ -1,15 +1,13 @@
 import React from 'react'
 import './assets/styles/index.scss'
-import Header from './components/layout/header/Header'
-
+import Layout from './components/layout/Layout'
 
 function App() {
 
   return (
-    <div>
-      <h2>hello</h2>
-      <Header/>
-    </div>
+    <Layout>
+      <h2>maim</h2>
+    </Layout>
   )
 }
 
