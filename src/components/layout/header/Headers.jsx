@@ -6,12 +6,12 @@ import Hamburger from '../hamburger/Hamburger'
 
 const Headers = ({backLink}) => {
 
-    const { isAuth } = useAuth()
+    // const { isAuth } = useAuth()
 
     return (
         <header className={s.header}>
             <button onClick={() => {}}>
-                <FiArrowLeft/>
+                <FiArrowLeft size={27} color='white'/>
             </button>
             <Hamburger/>
         </header>

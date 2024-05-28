@@ -6,7 +6,7 @@ function App() {
 
   return (
     <Layout>
-      <h2>maim</h2>
+      <div></div>
     </Layout>
   )
 }
