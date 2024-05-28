@@ -1,12 +1,9 @@
 import React from 'react'
-import { IconName } from "react-icons/lia";
 
-const Header = () => {
+const header = () => {
   return (
-    <div>
-      <LiaUserSolid />
-    </div>
+    <div>header</div>
   )
 }
 
-export default Header
+export default header
