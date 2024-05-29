@@ -9,24 +9,22 @@ const Menu = ({isShow}) => {
     const handleLogout = () => {};
 
     return (
-        <div className={s.wrapper}>
-            <nav className={cn(s.menu, {[s.show]: isShow})}>
-                <ul>
-                    {
-                        menu.map((t, index) => {
-                            return(
-                                <li key={index}>
-                                    {t.title}
-                                </li>
-                            )
-                        })
-                    }
-                    <li>
-                        <button onClick={handleLogout}>Logout</button>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav className={cn(s.menu, {[s.show]: isShow})}>
+            <ul>
+                {
+                    menu.map((t, index) => {
+                        return(
+                            <li key={index}>
+                                {t.title}
+                            </li>
+                        )
+                    })
+                }
+                <li>
+                    <button onClick={handleLogout}>Logout</button>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
