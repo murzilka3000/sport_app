@@ -12,7 +12,7 @@ const Hamburger = () => {
     return (
         <div className={s.wrapper} ref={ref}>
             <button onClick={() => setIsShow(!isShow)}>
-                {isShow ? <IoClose color='white' size={27}/> : <GiHamburgerMenu color='white' size={27}/>}
+                {isShow ? <IoClose color='white' size={30}/> : <GiHamburgerMenu color='white' size={30}/>}
             </button>
             <Menu isShow={isShow}/>
         </div>

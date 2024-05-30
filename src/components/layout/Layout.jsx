@@ -1,12 +1,15 @@
 import React from "react"
 import Headers from "./header/Headers"
+import cn from 'clsx'
+import s from './Layout.module.scss'
 
-const Layout = ({children}) => {
+const Layout = ({children, bgImage, heading='', backLink='/'}) => {
   return (
-    <div>
-        <Headers/>
-        {children}
-    </div>
+    <section className={cn(s.wrapper, {[s.otherPage]: !!heading})}>
+        <Headers backLink={backLink}/>
+        {heading && <h1 className={s.heading}>{heading}</h1>}
+        {children && <div>{children}</div>}
+    </section>
   )
 }
 
