@@ -1,8 +1,11 @@
 import React from 'react'
+ 
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <Layout>
+      <h1>gdhnygh</h1>
+    </Layout>
   )
 }
 

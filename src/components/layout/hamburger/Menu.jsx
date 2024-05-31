@@ -2,7 +2,7 @@ import React from 'react'
 import menu from './menu.data'
 import s from './Hamburger.module.scss'
 import cn from 'clsx'
-
+import {Link} from "react-router-dom";
 
 const Menu = ({isShow}) => {
 
@@ -15,7 +15,7 @@ const Menu = ({isShow}) => {
                     menu.map((t, index) => {
                         return(
                             <li key={index}>
-                                {t.title}
+                                <Link to={t.link}>{t.title}</Link>
                             </li>
                         )
                     })

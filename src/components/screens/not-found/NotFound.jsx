@@ -3,7 +3,7 @@ import Layout from '../../layout/Layout'
 
 const NotFound = () => {
   return (
-    <Layout>404</Layout>
+    <Layout heading='Page not found'/>
   )
 }
 

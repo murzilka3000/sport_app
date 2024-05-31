@@ -7,7 +7,7 @@ import {
 import NotFound from '../components/screens/not-found/NotFound';
 import { routes } from './routes.data';
   
-  const Routes = () => {
+  const Router = () => {
     return (
       <BrowserRouter>
         <Routes>
@@ -28,4 +28,4 @@ import { routes } from './routes.data';
     )
   }
   
-  export default Routes
+  export default Router

@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../../layout/Layout'
 
 const Auth = () => {
   return (
-    <div>Auth</div>
+    <Layout>
+      <h2>gbgfnhdf</h2>
+    </Layout>
   )
 }
 
