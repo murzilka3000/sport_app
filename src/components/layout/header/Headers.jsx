@@ -8,7 +8,7 @@ import { TfiUser } from 'react-icons/tfi'
 
 const Headers = ({backLink =''}) => {
 
-    // const { isAuth } = useAuth()
+    const { isAuth } = useAuth()
 
     const {pathname} = useLocation()
     const navigate = useNavigate()
@@ -19,7 +19,7 @@ const Headers = ({backLink =''}) => {
             <button onClick={() => {navigate(backLink)}}>
                 <FiArrowLeft size={27} color='white'/>
             </button>) : 
-            <button onClick={() => {navigate('/profile')}}>
+            <button onClick={() => navigate(isAuth ? '/profile' : '/auth')}>
                 <TfiUser size={27} color='white'/>
             </button>}
             <Hamburger/>
