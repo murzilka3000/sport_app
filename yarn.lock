@@ -796,6 +796,13 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
+ax@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/ax/-/ax-0.2.2.tgz#91013e3cfb256e6c7428f60425d93aed6f8fa5ca"
+  integrity sha512-i3Ht6d7QUoDEBj8LDGIYCEGHCk3xZwlX/08Wqae21xbKJjg96Z6ufxGwc0GYXtWVaLj5xUwvRukY/52me1ZRqQ==
+  dependencies:
+    sprintf "0.1.x"
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
@@ -2310,6 +2317,11 @@ source-map@^0.5.0:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==
+
+sprintf@0.1.x:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/sprintf/-/sprintf-0.1.5.tgz#8f83e39a9317c1a502cb7db8050e51c679f6edcf"
+  integrity sha512-4X5KsuXFQ7f+d7Y+bi4qSb6eI+YoifDTGr0MQJXRoYO7BO7evfRCjds6kk3z7l5CiJYxgDN1x5Er4WiyCt+zTQ==
 
 string.prototype.matchall@^4.0.10:
   version "4.0.11"
