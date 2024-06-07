@@ -5,27 +5,33 @@ import Button from '../../ui/button/Button'
 import Field from '../../ui/field/Field'
 import Loader from '../../ui/Loader'
 import s from './Auth.module.scss'
+import AuthService from '../../../services/auth.service'
+import { useMutation } from '@tanstack/react-query'
 
 const Auth = () => {
 
-  const isLoading = false;
-  const isLoadingAuth = false;
-
-  const [type, setType] = useState('auth')
+  const [type, setType] = useState('login')
  
   const { register, handleSubmit, formState: { errors } } = useForm({
     mode: 'onChange'
   })
 
+  const {mutate, isLoading} = useMutation(['auth'], ({email, password}) =>
+    AuthService.main(email, password, type), {
+    onSuccess: data => {
+      alert('success')
+    }
+  })
+
   function onSubmit(data) {
-    console.log(data)
+    mutate(data)
   }
 
   return (
     <>
       <Layout heading='Sign in' bgImage='/images/auth-bg.png'/>
         <div className="wrapper-inner-page">
-          {(isLoading || isLoadingAuth) && <Loader/>}
+          {isLoading  && <Loader/>}
           <form onSubmit={handleSubmit(onSubmit)}>
             <Field
               error={errors?.email?.message}
