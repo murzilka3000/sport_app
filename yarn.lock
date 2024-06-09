@@ -553,17 +553,18 @@
   resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.18.0.tgz"
   integrity sha512-UOo5FdvOL0+eIVTgS4tIdbW+TtnBLWg1YBCcU2KWM7nuNwRz9bksDX1bekJJCpu25N1DVWaCwnT39dVQxzqS8g==
 
-"@tanstack/query-core@5.40.0":
-  version "5.40.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.40.0.tgz#c74ae8303752ed4b5a0ab848ec71a0e6e8179f83"
-  integrity sha512-eD8K8jsOIq0Z5u/QbvOmfvKKE/XC39jA7yv4hgpl/1SRiU+J8QCIwgM/mEHuunQsL87dcvnHqSVLmf9pD4CiaA==
+"@tanstack/query-core@4.29.11":
+  version "4.29.11"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.29.11.tgz#fa338f7d6897c6be5de6d8dabd603d9b78ee48c7"
+  integrity sha512-8C+hF6SFAb/TlFZyS9FItgNwrw4PMa7YeX+KQYe2ZAiEz6uzg6yIr+QBzPkUwZ/L0bXvGd1sufTm3wotoz+GwQ==
 
-"@tanstack/react-query@^5.40.1":
-  version "5.40.1"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.40.1.tgz#c1098791fea42bdc4c48938fb0131fa9ccc30fae"
-  integrity sha512-gOcmu+gpFd2taHrrgMM9RemLYYEDYfsCqszxCC0xtx+csDa4R8t7Hr7SfWXQP13S2sF+mOxySo/+FNXJFYBqcA==
+"@tanstack/react-query@^4.29.13":
+  version "4.29.13"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.29.13.tgz#937ce9e8efcff0106817f7e1341c8a19d29f29df"
+  integrity sha512-qF8SHosMU6SzxWa7Ivxp3Q07zXvH+8PBDAlH8CR9ywfT3Y7uOK3jclfwMLzqgoGgDnYCarY2Ra+qDV0+xm19JQ==
   dependencies:
-    "@tanstack/query-core" "5.40.0"
+    "@tanstack/query-core" "4.29.11"
+    use-sync-external-store "^1.2.0"
 
 "@trivago/prettier-plugin-sort-imports@^4.3.0":
   version "4.3.0"
@@ -2571,6 +2572,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-sync-external-store@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.2.tgz#c3b6390f3a30eba13200d2302dcdf1e7b57b2ef9"
+  integrity sha512-PElTlVMwpblvbNqQ82d2n6RjStvdSoNe9FG28kNfz3WiXilJm4DdNkEzRhCZuIDwY8U08WVihhGR5iRqAwfDiw==
 
 vite-plugin-sass@^0.1.0:
   version "0.1.0"
